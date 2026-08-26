@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Coffee Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: #0f1015; color: #f8fafc; line-height: 1.6; }
+    header { background: #1a1715; border-bottom: 1px solid #3c2f2f; padding: 18px 32px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 22px; font-weight: 700; color: #d4a373; display: flex; align-items: center; gap: 8px; }
+    nav a { color: #cbd5e1; text-decoration: none; margin-left: 20px; font-size: 14px; transition: color 0.2s; }
+    nav a:hover { color: #d4a373; }
+    .hero { max-width: 900px; margin: 60px auto; padding: 0 24px; text-align: center; }
+    .badge { display: inline-block; background: rgba(212, 163, 115, 0.15); color: #d4a373; border: 1px solid rgba(212, 163, 115, 0.3); padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; margin-bottom: 20px; }
+    h1 { font-size: 42px; font-weight: 800; color: #ffffff; margin-bottom: 16px; letter-spacing: -0.02em; }
+    p.subtitle { font-size: 18px; color: #94a3b8; max-width: 600px; margin: 0 auto 36px; }
+    .cta-btn { background: #d4a373; color: #1a1715; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; text-decoration: none; transition: transform 0.2s, background 0.2s; display: inline-block; }
+    .cta-btn:hover { background: #e0b284; transform: translateY(-2px); }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; max-width: 900px; margin: 40px auto 80px; padding: 0 24px; }
+    .menu-card { background: #1c1a18; border: 1px solid #2e2825; border-radius: 12px; padding: 24px; text-align: left; }
+    .menu-card h3 { color: #f8fafc; font-size: 18px; margin-bottom: 8px; }
+    .menu-card p { color: #94a3b8; font-size: 13px; margin-bottom: 16px; }
+    .menu-card .price { font-size: 16px; font-weight: 700; color: #d4a373; }
+    footer { border-top: 1px solid #262422; text-align: center; padding: 24px; color: #64748b; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">☕ Artisan Coffee Roasters</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <span class="badge">Freshly Brewed Daily</span>
+      <h1>Welcome to Our Coffee Shop</h1>
+      <p class="subtitle">Experience handcrafted specialty espresso, cold brews, and artisanal pastries brewed to perfection.</p>
+      <a href="#menu" class="cta-btn" onclick="orderCoffee('House Specialty')">Explore Our Menu</a>
+    </section>
+    <section class="menu-grid" id="menu">
+      <div class="menu-card">
+        <h3>Espresso Roast</h3>
+        <p>Rich, full-bodied single origin with notes of dark cocoa.</p>
+        <div class="price">$3.50</div>
+      </div>
+      <div class="menu-card">
+        <h3>Caramel Macchiato</h3>
+        <p>Steamed milk with vanilla-flavored syrup, espresso and caramel drizzle.</p>
+        <div class="price">$4.75</div>
+      </div>
+      <div class="menu-card">
+        <h3>Nitro Cold Brew</h3>
+        <p>Slow-steeped for 20 hours and infused with nitrogen for microfoam.</p>
+        <div class="price">$5.25</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Artisan Coffee Roasters. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
