@@ -1,0 +1,12 @@
+# Images Directory
+
+This directory is preserved for future local images.
+Currently, the application uses placeholder images from Unsplash API.
+
+Image URLs are defined in js/data.js using the format:
+https://images.unsplash.com/photo-{id}?w=400&h=300&fit=crop
+
+To use local images:
+1. Place image files in this directory
+2. Update the image paths in js/data.js
+3. Ensure images are optimized for web (compressed, appropriate dimensions)

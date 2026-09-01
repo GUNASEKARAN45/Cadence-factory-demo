@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Order Your Favorite Food Online</title>
+    <meta name="description" content="Order delicious food from top restaurants near you. Fast delivery, great prices, and amazing dishes.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/restaurants.css">
+    <link rel="stylesheet" href="css/offers.css">
+    <link rel="stylesheet" href="css/dishes.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>🍔 FoodHub</h1>
+            </div>
+            
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#restaurants" class="nav-link">Restaurants</a></li>
+                    <li><a href="#offers" class="nav-link">Offers</a></li>
+                    <li><a href="#dishes" class="nav-link">Menu</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="headerSearch" placeholder="Search for food..." class="search-input">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+                
+                <div class="location-display">
+                    <span class="location-icon">📍</span>
+                    <span class="location-text">New York, NY</span>
+                </div>
+                
+                <button class="cart-btn" id="cartBtn" aria-label="Shopping Cart">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="hero-title">Hungry? Order Food You Love</h2>
+            <p class="hero-subtitle">Discover the best restaurants and dishes near you</p>
+            
+            <div class="hero-search">
+                <input type="text" id="heroSearchInput" placeholder="Search for dishes, restaurants..." class="hero-search-input">
+                
+                <select id="categoryFilter" class="category-filter">
+                    <option value="">All Categories</option>
+                </select>
+                
+                <select id="priceFilter" class="price-filter">
+                    <option value="">All Prices</option>
+                    <option value="budget">Budget ($0-10)</option>
+                    <option value="medium">Medium ($10-20)</option>
+                    <option value="premium">Premium ($20+)</option>
+                </select>
+                
+                <button class="hero-cta" id="heroSearchBtn">Search Food 🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <p class="section-subtitle">What are you craving today?</p>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Restaurants -->
+    <section class="restaurants" id="restaurants">
+        <div class="container">
+            <h2 class="section-title">Popular Restaurants</h2>
+            <p class="section-subtitle">Top-rated restaurants near you</p>
+            <div class="restaurants-grid" id="restaurantsGrid">
+                <!-- Restaurants will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <p class="section-subtitle">Don't miss out on these amazing deals!</p>
+            <div class="offers-grid" id="offersGrid">
+                <!-- Offers will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes -->
+    <section class="dishes" id="dishes">
+        <div class="container">
+            <h2 class="section-title">Popular Dishes</h2>
+            <p class="section-subtitle">Best-selling items from top restaurants</p>
+            <div class="dishes-grid" id="dishesGrid">
+                <!-- Dishes will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real reviews from real food lovers</p>
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Reviews will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">🍔 FoodHub</h3>
+                <p class="footer-description">Your favorite food delivery service. Order from the best restaurants near you.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-heading">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#help">Help Center</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#delivery">Delivery Info</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-heading">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#cookies">Cookie Policy</a></li>
+                    <li><a href="#refund">Refund Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p class="newsletter-text">Subscribe to get updates on offers and news</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2024 FoodHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-overlay" id="cartModalOverlay"></div>
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3 class="cart-modal-title">Your Cart</h3>
+                <button class="cart-modal-close" id="cartModalClose" aria-label="Close Cart">✕</button>
+            </div>
+            
+            <div class="cart-modal-body" id="cartModalBody">
+                <!-- Cart items will be rendered here -->
+            </div>
+            
+            <div class="cart-modal-footer">
+                <div class="cart-summary">
+                    <div class="cart-summary-row">
+                        <span>Subtotal:</span>
+                        <span id="cartSubtotal">$0.00</span>
+                    </div>
+                    <div class="cart-summary-row">
+                        <span>Tax (8%):</span>
+                        <span id="cartTax">$0.00</span>
+                    </div>
+                    <div class="cart-summary-row">
+                        <span>Delivery:</span>
+                        <span id="cartDelivery">$2.99</span>
+                    </div>
+                    <div class="cart-summary-row cart-total">
+                        <span>Total:</span>
+                        <span id="cartTotal">$0.00</span>
+                    </div>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="notification" id="notification"></div>
+
+    <!-- JavaScript Files -->
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
